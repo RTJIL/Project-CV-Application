@@ -1,0 +1,48 @@
+.personal-details-container {
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h2 {
+    margin: .8rem 0;
+}
+
+label {
+  display: block;
+}
+
+.label-text {
+  font-size: 1.2rem;
+}
+
+.label-recommended {
+  font-size: 0.8rem;
+  padding: 5px;
+
+  background: linear-gradient(90deg, rgb(18, 246, 136), #b7ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 2px;
+  flex: 1;
+  outline: none;
+  transition: border-color .2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px #4CAF50;
+}

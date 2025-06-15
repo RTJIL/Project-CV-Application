@@ -13,6 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.buildingSection {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,8 +31,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -36,7 +41,7 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;

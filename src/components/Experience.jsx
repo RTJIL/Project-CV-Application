@@ -1,21 +1,22 @@
-import '/src/styles/Education.css';
+/**Experience.jsx */
+import '/src/styles/Experience.css';
 
-export default function Education({isOpen, toggleSection}) {
+export default function Experience({ isOpen, toggleSection }) {
   return (
-    <div className="education-section">
+    <div className="experience-section">
       <div
         onClick={toggleSection}
         role="button"
         tabIndex={0}
-        className="education-button"
+        className="experience-button"
         style={{
           display: 'flex',
           alignItems: 'center',
           gap: '10px',
         }}
       >
-        <img src="/src/assets/mortarboard.png" alt="mortarboard" />
-        <div className="title">Education</div>
+        <img src="/src/assets/briefcase.png" alt="mortarboard" />
+        <div className="title">Experience</div>
         <img
           className={isOpen ? 'open' : ''}
           src="/src/assets/arrow-down-sign-to-navigate.png"
@@ -25,7 +26,7 @@ export default function Education({isOpen, toggleSection}) {
       </div>
 
       <div
-        className={`education-sub-section ${isOpen ? 'open' : ''}`}
+        className={`experience-sub-section ${isOpen ? 'open' : ''}`}
         style={{ flexDirection: 'column', alignItems: 'center' }}
       >
         <button
@@ -35,7 +36,7 @@ export default function Education({isOpen, toggleSection}) {
             gap: '8px',
           }}
         >
-          <img src="/src/assets/plus.png" alt="plusIco" /> Education
+          <img src="/src/assets/plus.png" alt="plusIco" /> Experience
         </button>
       </div>
     </div>

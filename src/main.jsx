@@ -2,13 +2,21 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles/index.css';
 import Actions from './components/Actions';
-import BaseInfo from './components/BaseInfo';
+import PersonalInfo from './components/PersonalInfo';
+import SyncEducationExp from './components/SyncEducationExp';
+import PdfView from './components/PdfView';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='buildingSection'>
-      <Actions />
-      <BaseInfo />
+    <div className="buildingSection">
+      <div className="input">
+        <Actions />
+        <PersonalInfo />
+        <SyncEducationExp />
+      </div>
+      <div className="pdfView">
+        <PdfView />
+      </div>
     </div>
   </StrictMode>
 );

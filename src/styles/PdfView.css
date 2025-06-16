@@ -1,0 +1,8 @@
+/*PdfView.css*/
+.pdf-view-container {
+    background-color: #1a1a1a;
+    min-width: 240px;
+    max-width: 100%;
+    min-height: 880px;
+    border-radius: 10px;
+}

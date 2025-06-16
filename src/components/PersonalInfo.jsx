@@ -1,6 +1,6 @@
-import '/src/styles/BaseInfo.css';
+import '/src/styles/PersonalInfo.css';
 
-export default function BaseInfo() {
+export default function PersonalInfo() {
   return (
     <div className="personal-details-container">
       <h2>Personal Details</h2>

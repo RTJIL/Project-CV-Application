@@ -58,10 +58,10 @@ export default function PdfView() {
   }
 
   function downloadPdf() {
-    if (!pdfUrl) return; // no PDF yet
+    if (!pdfUrl) return; 
     const a = document.createElement('a');
     a.href = pdfUrl;
-    a.download = 'my_resume.pdf'; // whatever filename you want
+    a.download = 'my_resume.pdf';
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -134,44 +134,6 @@ export default function PdfView() {
 
   return (
     <div style={{ display: 'flex', gap: '20px' }} className="buildingSection">
-      {/* <div>
-        <input
-          name="name"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        <input
-          name="professionTitle"
-          placeholder="Profession Title"
-          value={formData.professionTitle}
-          onChange={handleChange}
-        />
-        <input
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        <input
-          name="phone"
-          placeholder="Phone"
-          value={formData.phone}
-          onChange={handleChange}
-        />
-        <input
-          name="address"
-          placeholder="Address"
-          value={formData.address}
-          onChange={handleChange}
-        />
-        <textarea
-          name="summary"
-          placeholder="Summary"
-          value={formData.summary}
-          onChange={handleChange}
-        />
-      </div> */}
       <div className="input">
         <Actions onClick={resetForm} onInstall={downloadPdf}/>
         <PersonalInfo formData={formData} onChange={handleChange} />

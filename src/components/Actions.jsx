@@ -1,6 +1,8 @@
 import '/src/styles/Actions.css';
+import deleteIco from '/public/delete.png';
+import installIco from '/public/installation.png';
 
-export default function Actions({onClick, onInstall}) {
+export default function Actions({ onClick, onInstall }) {
   /* const savePdf = () => {
     const a = document.createElement('a');
     a.href = pdfUrl;
@@ -30,11 +32,7 @@ export default function Actions({onClick, onInstall}) {
         }}
         onClick={onClick}
       >
-        <img
-          className="delete-ico"
-          src="/src/assets/delete.png"
-          alt="install"
-        />
+        <img className="delete-ico" src={deleteIco} alt="install" />
         Clear Resume
       </button>
 
@@ -49,11 +47,7 @@ export default function Actions({onClick, onInstall}) {
         }}
         onClick={onInstall}
       >
-        <img
-          className="install-ico"
-          src="/src/assets/installation.png"
-          alt="install"
-        />
+        <img className="install-ico" src={installIco} alt="install" />
         Download
       </button>
     </div>

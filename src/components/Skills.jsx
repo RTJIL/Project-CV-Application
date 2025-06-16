@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import '/src/styles/Skills.css';
 
-export default function Skills({isOpen, toggleSection}) {
+export default function Skills({ isOpen, toggleSection }) {
+  const [isSkillPage, setSkillPage] = useState(false);
+
+  function toggleSkillPage() {
+    setSkillPage((prev) => !prev);
+  }
+
   return (
     <div className="skills-section">
       <div
@@ -34,9 +41,15 @@ export default function Skills({isOpen, toggleSection}) {
             alignItems: 'center',
             gap: '8px',
           }}
+          onClick={toggleSkillPage}
         >
           <img src="/src/assets/plus.png" alt="plusIco" /> Skills
         </button>
+
+        <label htmlFor="text" className={`skill-holder ${isSkillPage ? 'open' : ''}`}>
+          <span className='skill-title'>Skill</span>
+          <input type="text" id="text" />
+        </label>
       </div>
     </div>
   );

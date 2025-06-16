@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import Experience from './Experience';
-import Education from './Education';
 import Skills from './Skills';
 
 export default function SyncEducationExp() {
@@ -20,10 +19,6 @@ export default function SyncEducationExp() {
       <Experience
         isOpen={openSection === 'experience'}
         toggleSection={() => toggleSection('experience')}
-      />
-      <Education
-        isOpen={openSection === 'education'}
-        toggleSection={() => toggleSection('education')}
       />
     </>
   );

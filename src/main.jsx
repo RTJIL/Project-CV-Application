@@ -8,15 +8,6 @@ import PdfView from './components/PdfView';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className="buildingSection">
-      <div className="input">
-        <Actions />
-        <PersonalInfo />
-        <SyncEducationExp />
-      </div>
-      <div className="pdfView">
-        <PdfView />
-      </div>
-    </div>
+    <PdfView />
   </StrictMode>
 );

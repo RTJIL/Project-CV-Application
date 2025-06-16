@@ -21,11 +21,11 @@ export default function Skills({ isOpen, toggleSection }) {
           gap: '10px',
         }}
       >
-        <img src="/src/assets/skills.png" alt="mortarboard" />
+        <img src="./assets/mortarboard.png" alt="mortarboard" />
         <div className="title">Skills</div>
         <img
           className={isOpen ? 'open' : ''}
-          src="/src/assets/arrow-down-sign-to-navigate.png"
+          src="./assets/arrow-down-sign-to-navigate.png"
           alt="arrow-down-sign-to-navigate"
           style={{ marginLeft: 'auto', height: '18px', marginRight: '10px' }}
         />
@@ -43,7 +43,7 @@ export default function Skills({ isOpen, toggleSection }) {
           }}
           onClick={toggleSkillPage}
         >
-          <img src="/src/assets/plus.png" alt="plusIco" /> Skills
+          <img src="./assets/plus.png" alt="plusIco" /> Skills
         </button>
 
         <label htmlFor="text" className={`skill-holder ${isSkillPage ? 'open' : ''}`}>

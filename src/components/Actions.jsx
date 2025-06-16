@@ -1,6 +1,13 @@
 import '/src/styles/Actions.css';
 
-export default function Actions() {
+export default function Actions({onClick, onInstall}) {
+  /* const savePdf = () => {
+    const a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = 'live-edited.pdf';
+    a.click();
+  }; */
+
   return (
     <div
       style={{
@@ -19,8 +26,9 @@ export default function Actions() {
           justifyContent: 'center',
           gap: '8px',
           width: '50%',
-          color: '#fc0005'
+          color: '#fc0005',
         }}
+        onClick={onClick}
       >
         <img
           className="delete-ico"
@@ -39,6 +47,7 @@ export default function Actions() {
           gap: '8px',
           width: '50%',
         }}
+        onClick={onInstall}
       >
         <img
           className="install-ico"

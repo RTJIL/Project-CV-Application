@@ -1,3 +1,5 @@
+/* index.css */
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,9 +17,22 @@
 
 .buildingSection {
   padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.buildingSection .input {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex: 1;
+}
+
+.buildingSection > .pdfView {
+  height: 600px;
+  flex: 1;
 }
 
 a {

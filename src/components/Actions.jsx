@@ -1,4 +1,4 @@
-import '../styles/Actions.css';
+import '/src/styles/Actions.css';
 
 export default function Actions() {
   return (
@@ -8,6 +8,8 @@ export default function Actions() {
         flexWrap: 'wrap',
         backgroundColor: '#1a1a1a',
         borderRadius: '10px',
+        position: 'sticky',
+        top: '10px',
       }}
     >
       <button
